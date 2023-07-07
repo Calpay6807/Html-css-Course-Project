@@ -1,0 +1,701 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Header Start */
+header{
+    width: 100%;
+    height: 100px;
+    padding: 15px 0px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; ;
+}
+
+.nav .nav-title{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    gap: 15px;
+}
+.nav .nav-title a{
+    color: rgb(48, 137, 145);
+    font-size: 50px;
+}
+.nav .nav-title h1{
+    color: gray;
+}
+.nav .nav-title h1 span{
+     color: rgb(48, 137, 145);;
+}
+
+.nav li{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav li a{
+    color: gray;
+    text-decoration: none;  
+}
+.nav li a:hover{
+    color: rgb(48, 137, 145);
+}
+
+.nav li a i{
+    color: rgb(48, 137, 145);
+     padding: 3px;    
+}
+
+/* Header Finish */
+
+/* Course Section Start*/
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+  }
+  
+  .course-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .course-section h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: gray;
+  }
+  .course-section h1 span{
+    color: rgb(48, 137, 145);
+  }
+  
+  .course-paragraph {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-course {
+    padding: 10px 20px;
+    background-color: rgb(48, 137, 145);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image img {
+   width: 90%;
+    height: auto;
+    margin-bottom: 85px;
+  }
+  
+
+/* Course Section End*/
+
+/* Section Course-two Start*/
+
+.section {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(48, 137, 145, 0.529);
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; ;    
+}
+
+.section-two, .section-three {
+    flex-basis: 50%;
+    padding: 20px;
+}
+.btn{
+    background-color: rgb(48, 137, 145);
+    color: white;
+    margin-top: 35px;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     font-size: 16px;
+     cursor: pointer;
+     width: 150px;
+}
+.section-two h1{
+    position: absolute;
+    top: -30px;
+    background-color: rgb(48, 137, 145);
+    color: #fff;
+    width: 60%;
+    padding: 20px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 60px;
+}
+.section-two p{
+    color: #fff;
+    font-size: 20px;  
+}
+.section-three img{
+    width: 50%;
+    height: auto;
+}
+/* Section Course-two end*/
+
+/* Popular Course Start */
+
+.popular-course{
+    width: auto;
+    height: 80vh;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   
+}
+.popular-course {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popular-course h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: gray;
+    font-weight: bold;
+}
+
+.popular-course p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(48, 137, 145);
+}
+
+.hr {
+    border-top: 1px solid rgb(48, 137, 145);
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 10px;
+   
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.course-card {
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin-right: 10px;
+    transition: 1500ms;
+}
+.course-card:hover{
+  transform: scale(.9);
+}
+.course-card img{
+   border-radius: 50%;
+   background-color: gray;
+    
+}
+.course-card .course-btn{
+    position: absolute;
+    bottom: -40px;
+    transform: translate(-50%,-50%);
+    background-color: rgb(48, 137, 145);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.course-card:last-child {
+    margin-right: 0;
+}
+
+.course-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.course-card h3{
+    color: rgb(48, 137, 145);
+    font-size: 22px;
+}
+.course-card p{
+    color: gray;
+    font-size: 18px;
+}
+.course-card .date{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Popular Course End */
+
+/* Learn card start */
+
+.learn-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 18px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 500ms;
+  }
+  .card img{
+    margin: auto;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+  }
+  section .head{
+    position: relative;
+  }
+  section .head h1{
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: gray;
+    color: #fff;
+    width: 60%;
+    padding: 20px 20px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    text-align: center;
+    transition: 500ms;
+  }
+  section .head h1:hover{
+    background-color: rgb(48, 137, 145);
+  }
+  .card-into{
+    padding: 10px;
+
+  }
+  .card-into h1{
+    color: rgb(48, 137, 145);
+  }
+  .card-into div{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    margin: 10px 0px;
+  }
+  .card-into p{
+    color: rgb(71, 69, 69);
+  }
+
+  .card-into button{
+    background-color:rgb(48, 137, 145) ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 500ms;
+  }
+  .card-into button:hover{
+    transform: scale(1.2);
+  }
+/* Learn card end */
+
+
+/* Footer*/
+  .footer-section{
+    background-color: rgba(48, 137, 145, 0.529);
+    width: 100%;
+    height: 200px;  
+    margin-top: 100px;
+  }
+
+
+  .footer-section .footer-head{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+  }
+  .footer-section .footer-head h1{
+    position: absolute;
+    background-color: rgb(48, 137, 145);
+    color: white;
+    padding: 40px 60px;
+    border-bottom-right-radius: 60px;
+    left: 0;
+    top: -30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .footer-section .footer-head .form{
+    position: absolute;
+    right: 0;
+    top: -30px;
+    border-bottom-left-radius:60px ;
+    background-color:  rgb(48, 137, 145);
+    padding: 30px 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .footer-section .footer-head .form p{
+    color: #f3f3f3;
+  }
+  .footer-section .footer-head .form p a{
+    color: rgb(41, 39, 39);
+  }
+  .footer-end{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(48, 137, 145);
+    height: 100px;
+    font-size: 22px;
+    color: #f2f2f2;
+    font-weight: bold;
+  }
+/* Footer*/
+
+/* aboute pages*/
+  .aboute{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .aboute {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .aboute > div {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .aboute h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(48, 137, 145);
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+ 
+  .aboute p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    color: gray;
+  }
+  
+  .aboute button {
+    margin-top: 10px;
+    background-color: rgb(48, 137, 145);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+/* aboute pages end*/
+
+/* aboute pages gallery  start*/
+
+  .gallery {
+    padding: 20px;
+    height: 60vh;
+    margin-top: 50px;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(48, 137, 145);
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+  
+  .gallery-container {
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .image-wrapper {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+  
+  .image-wrapper img {
+    width: 200px;
+    height: auto;
+  }
+/* aboute pages gallery  end*/
+
+  /* Contact pages start*/
+  .section-contac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 35px;
+
+  }
+  
+  .section-contac .contact-head h1{
+    color: gray;
+    font-size: 35px;
+    text-align: center;
+    
+  }
+  .section-contac .contact-head h1 span{
+    color: rgb(48, 137, 145) ;
+    
+  }
+  .section-contac .contact-head p{
+    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+  }
+  
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  form .from-contact {
+    margin-bottom: 10px;
+  }
+  
+  .from-contact label {
+    display: block;
+    color: gray;
+    font-weight: bold;
+  }
+  
+  .from-contact input {
+    width: 400px;
+    padding: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  form button{
+    padding: 8px 20px;
+    border: none;
+    background-color: rgb(48, 137, 145);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  form button:hover{
+    opacity: .7;
+  }
+  /* Contact pages end*/
+
+  /* Contact pages end */
+
+  @media screen and (max-width: 955px){
+
+
+    .aboute h1{
+      font-size: 15px;
+    }
+    .aboute p{
+      font-size: 15px;
+    }
+    .aboute img{
+      width: 350px;
+    }
+    .footer-section{
+      height: 150px;
+    }
+    .footer-section .footer-head h1{
+      font-size: 20px;
+      padding: 15px 20px;
+  }
+  .footer-section .footer-head .form{
+    padding: 15px 20px;
+  }
+
+  }
+
+  @media screen and (max-width: 860px){
+    .head h1{
+      margin-top: 25px;
+      padding: 10px 10px;
+      font-size: 15px;
+     }
+     .learn-card   {
+    justify-content: center;
+    }
+  }
+
+
+  @media screen and (max-width: 630px){
+   .nav{
+    padding: 0;
+    font-size: 12px;
+   }
+   .container{
+    flex-direction: column;
+   }
+   .course-section h1{
+    font-size: 20px;
+   }
+   .course-section p {
+    font-size: 15px;
+   }
+   .course-section button{
+    padding: 5px 8px;
+    font-size: 14px;
+   }
+   .container .image img{
+
+    height: 380px;
+   }
+   
+   .section .section-two h1{
+    padding: 10px 20px;
+    font-size: 20px;
+   }
+   .section .section-two p{
+    font-size: 14px;
+    margin-top: 20px;
+    
+   }
+   .section .section-three img{
+    height: 150px;
+    width: 180px;
+   }
+
+ 
+   .popular-course h1{
+    font-size: 20px;
+   }
+   .popular-course p{
+    font-size: 13px;
+   }
+   .course-container .course-card{
+    padding: 2px;
+   }
+   .course-container .course-card img{
+    height: 100px;
+    width: 100px;
+   }
+   .course-container .course-card p{
+    margin-bottom: 10px;
+   }
+   .course-container .course-card button{
+    font-size: 10px;
+    padding: 2px 5px;
+    bottom: -20px;
+   }
+  
+   .aboute{
+    flex-direction: column;
+   }
+   .aboute  h1{
+    font-size: 15px;
+   }
+   .aboute p{
+    font-size: 12px;
+   }
+   .aboute img{
+    width: 200px;
+   }
+   .section-contac .contact-head h1{
+    font-size: 25px;
+   }
+   .section-contac .contact-head p{
+    font-size: 15px;
+    text-align: center;
+   }
+   .section-contac form{
+    padding: 25px;
+   }
+   .footer-section{
+    height: 100px;
+   }
+   .footer-section .footer-head h1{
+    font-size: 15px;
+    padding: 10px 20px;
+   }
+   .footer-section .footer-head .form {
+    padding: 5px 10px;
+    margin-top: 60px;
+   }
+   footer .footer-end{
+    font-size: 18px;
+   }
+  }
+
+  
+
+
+ 
+
+  
